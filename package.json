@@ -1,0 +1,25 @@
+{
+  "name": "schwartstories.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server",
+    "build": "npm run minify:html",
+    "minify:html": "html-minifier --minify-css --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype index_raw.html -o index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schwartstories/schwartstories.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schwartstories/schwartstories.github.io/issues"
+  },
+  "homepage": "https://github.com/schwartstories/schwartstories.github.io#readme",
+  "devDependencies": {
+    "html-minifier": "^3.5.21",
+    "lite-server": "^2.4.0"
+  }
+}

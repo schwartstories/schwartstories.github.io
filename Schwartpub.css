@@ -1,0 +1,119 @@
+/*
+	Schwartpub
+	Schwart Stories ePub css
+	Visit http://www.ulysses.app/styles for full reference
+*/
+
+html {
+	text-rendering: optimizeLegibility !important;
+}
+
+body {
+	widows: 2;
+	orphans: 2;
+	hyphens: auto;
+	-moz-hyphens: none;
+	-webkit-hyphens: none;
+}
+
+h1, h2, h3 {
+	-webkit-hyphens: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	page-break-after: avoid !important;
+}
+
+h1:empty {
+	display: none;
+}
+
+p {
+	text-indent:1.5em;
+	-webkit-hyphens: none !important;
+}
+h1 + p,
+.title-matter.break-after + p {
+	text-indent:0;
+}
+:not([class$=-matter]) > h1 + p::first-letter,
+.title-matter.break-after + p::first-letter {
+	float:left; 
+  font-size:3em;
+	line-height: 1;
+	margin-bottom: -0.353em;
+	margin-right: 0.1em;
+}
+h4 {
+	margin: 0;
+}
+
+hr {
+	width: 30%;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+img {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+	page-break-after: avoid !important;
+}
+img[title$=preview] {
+  width: 200px;
+}
+
+[class$=-matter] p {
+	text-indent:0;
+}
+
+.title-matter.break-after {
+	page-break-after: always !important;
+}
+.title-matter > * {
+	text-align: center;
+}
+.title-matter h1 {
+	font-size: 3em;
+}
+.title-matter h2 {
+	font-size: 1em;
+}
+.title-matter h2.subtitle {
+	font-size: 2em;
+	padding-top: 0;
+}
+.title-matter h3 {
+	font-size: 1em;
+}
+
+.copyright-matter p {
+	text-align: center;
+	padding-left: 2em;
+	padding-right: 2em;
+	font-size: .8em;
+}
+
+.marketing-matter h1 {
+	font-size: 1.6em;
+	margin: 0;
+	padding: 0;
+}
+.marketing-matter h2 {
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
+}
+.marketing-matter h3 {
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+.marketing-matter p, .marketing-matter li {
+	font-size: .9em;
+}
+.marketing-matter ul {
+	padding-left: 1.5em;
+}
