@@ -55,14 +55,18 @@ hr {
 }
 
 img {
-	display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 98%;
 	page-break-after: avoid !important;
+}
+figure  {
+  width: 100%;
+	text-align: center;
+	margin: 0;
 }
 img[title$=preview] {
   width: 200px;
+  height: 318px;
+  max-width: 200px;
+  max-height: 318px;
 }
 
 [class$=-matter] p {
